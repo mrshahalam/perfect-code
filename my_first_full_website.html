@@ -1,0 +1,519 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,   initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> UI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+       
+        
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+                @import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu&display=swap');
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family : 'Lato';
+}
+.navbar-brand{
+    font-family: 'pacifico';
+    font-size: 35px;
+    color: blueviolet
+}
+.nav-link{
+    font-size: 16px;
+    margin: 15px;
+    color: black !important;
+    font-family: 'Roboto Condensed';
+}
+.nav-link:hover{
+    color: aqua !important;
+
+}
+.active .nav-link{
+    color: #00E8E8 !important;
+}
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+}
+.menu-right-btn:hover{
+    background-color: #00E8E8;
+}
+.site-content{
+    background-image: url('beach.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.site-title, .site-desc{
+    /*color: white;*/
+    font-family: 'Righteous';
+}
+.site-title{
+    margin-top: 30%;   
+    margin-bottom: 6%;
+    font-size: 50px; 
+}
+.site-desc{
+    font-size: 14px;
+    padding-left: 15%;
+}
+.site-btn1{
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+.site-btn2{
+    background-color: white;
+
+}
+.site-btn1, .site-btn2{
+   margin-top: 5%;
+   margin-bottom: 40%;
+
+}
+/* section 1*/
+.section-1 .heading-1{
+    margin-top: 8%;
+}
+.card{
+    width: 20rem;
+}
+.section-1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+.section-1 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+.section-1 .car-text, .para-1{
+    color: rgba(0,0, 0,0, 59);
+}
+.section-1{
+    margin-bottom: 8%;
+}
+/* section -2*/
+.section-2 .container-fluid{
+    background-image: url('beach.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 4%;
+    font-family: 'Righteous';
+    width: 80%;
+    color: whitesmoke;
+}
+.section-2 .para{
+    width: 80%;
+    font-family: 'Ubuntu';
+    color: whitesmoke;
+    margin-bottom: 7%;
+}
+.section-2 .btn{
+    margin-bottom: 15%;
+    widows: 30%;
+    padding: 2% 5%;
+}
+/* section -3*/
+ .section-3{
+     margin-top: 6%;
+
+ }
+ .section-3 i{
+     color: #00E8E8;
+ }
+ .section-3 p{
+     color: rgba(0,0, 0,0, 59);
+ }
+ /*section -4*/
+ .section-4{
+     margin-top: 8%;
+
+ }
+ .section-4 .row .col-md-7, .col-md-5{
+     margin-top: 10%;
+     margin-bottom: 10%;
+ }
+ .section-4 a{
+     color: aquamarine;
+     font-size: 40px;
+     text-decoration: none;
+ }
+ .section-4 .para-1{
+     color: white;
+     font-family: 'Roboto Condensed';
+     margin-top: 7%;
+     font-size: 23px;
+ }
+ /*footer*/
+ .social{
+     color: red;
+     font-size: 20px
+ }
+ @media screen and (max-width: 768px) {
+     .section-1 .card{
+         width: 14rem;
+     }
+     .section-4 .col-md-7 img{
+         width: 350px;
+     }
+ }
+ @media screen  and (max-width: 320px){
+     .site-content  .site-title{
+         font-size: 30px;
+         padding-left: 15%;
+     }
+     .site-content  .site-btn2{
+         display: none;
+     }
+     .site-content .site-btn1{
+         margin-left: 15%;
+     }
+     .section-1 .heading-1, .section-1 .heading-2{
+         font-size: 25px;
+     }
+     .section-1 .col-md-4{
+         padding: 5%;
+         margin-left: 8%;
+     }
+     .section-1 .card{
+         width: 15rem;
+     }
+     .section-4 .col-md-5{
+         padding: 0% 15%;
+     }
+     footer input[type="button"]{
+         margin-top: 5%;
+     }
+ }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand ml-3">Dtu:)<span style="color: #00E8E8;">tion</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+                 aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+                 <span class="navbar-toggle-icon"></span>
+                 
+                </button>
+                <div class="collapse navbar-collapse"></div>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                                  <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Feature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <button class="btn menu-right-btn border" type="submit">
+                            Template
+                        </button>
+                    </form>
+                </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid p-0">
+                <div class="site-content">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column">
+                            <h1 class="site-title">Bootstrap User Interface</h1>
+                            <p class="site-desc"> hellow frd this website is madeup by me name to suna hi hoga shah alam</p>
+
+                            <div class="d-flex flex-row">
+                            
+                                <input type="button" value="Buy Template" class="btn site-btn1 px-4 py-3 mr-4 btn-dark"></input>
+                                <input type="button" value="Know Features" class="btn site-btn2 px-4 py-3 mr-4 btn-light"></input>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="section-1">
+                    <div class="container text-center">
+                        <h1 class="heading-1"> Fantastic Features</h1>
+                        <h1 class="heading-2">& Difference Type of Templates</h1>
+                        <p class="para-1">We placed this with your other Font Awesome codes
+                        To help save you some time, you can find and edit this embed code along with your others. Remember, you can log in and
+                        change any settings or features around your embed code - no need to change things in your app or your icon references in
+                        your app
+                        </p>
+
+
+
+
+
+                       <div class="row justify-content-center text-center">
+                           <div class="col-mind-4">
+                               <div  class="card" style="width:20rem;">
+                                 <img src="imac.jpg" alt="Image1" height="200px" class="card-image-top">
+                                 <div class="card-body">
+                                     <h4 class="card-title">Responsive</h4>
+                                     <p class="card-text"> 
+                                              Why am I getting this email?
+                                              You received this email because someone wanted to use the Font Awesome CDN
+                                              to load icons on their site and supplied this
+                                              email address to do so.
+                                    
+                                              If this is a mistake or not you, our bad. You can delete this code and remove 
+                                              your email address.
+                                     </p>
+                                 </div>
+                               </div>
+                               </div>
+                               <div class="col-md-4">
+                               <img class="card">
+                                <img src="hhh.jpg" alt="Image2" height="200px" class="card-image-top">  
+                                <div class="car-body">
+                                    <h4 class="car-title">Flexible</h4>
+                                    <div class="card-text">
+                                        <p>
+                                            Hi lx logan,
+                                            
+                                            A new semester has begun, and it is the perfect time to learn and
+                                             upskill yourself for the dream job. Coding Ninjas is
+                                            an ideal platform that provides online courses which helps you to 
+                                            land highest-paying jobs at the leading tech-giants.
+                                            We have around 5000 alumni who are working in big-wigs such as
+                                             Edelweiss, Amazon, Google, Sprinklr and more.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                
+                               
+                               <div class="col-md-4">
+                                <div class="card">
+                                    <img src="lapi.jpg" alt="Image1" height="200px" class="card-image-top">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Responsive</h4>
+                                        <p class="card-text">
+                                            Why am I getting this email?
+                                            You received this email because someone wanted to use the Font Awesome CDN
+                                            to load icons on their site and supplied this
+                                            email address to do so.
+                                
+                                            If this is a mistake or not you, our bad. You can delete this code and remove
+                                            your email address.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                  <div class="container-fluid">
+                      <div class="d-flex justify-content-end">
+                          <div class="d-flex flex-column m-4">
+                                <h1 class="heading-1">Like & Share Your Love</h1>
+                                <p class="para">You received this email because someone wanted
+                                to use the Font Awesome CDN.
+                              
+                                </p>
+                                <input type="button" value="Show" class="btn btn-danger">
+                          </div>
+                      </div>
+                  </div>
+            </div>
+
+
+            <div class="section-3">
+                <div class="content">
+
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex flex-row">
+                                <i class="fas fa-question fa-3x m-2"></i>
+                                <div class="d-flex flex-column">
+                                    <h3 class="m-2">24/7 Support</h3>
+                                    <p class="m-2">
+                                        Install Wordpress on your PC or Mac computer, so you can learn
+                                         without having to pay hosting or domain fees.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column">
+                                <i class="fas fa-seeding fa-3x m-2"></i>
+                                <div class="d-flex flex-column">
+                                    <h3 class="m-2">Marketing</h3>
+                                    <p class="m-2">
+                                        Install Wordpress on your PC or Mac computer, so you can learn
+                                        without having to pay hosting or domain fees.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column">
+                                <i class="fas fa-rocket fa-3x m-2"></i>
+                                <div class="d-flex flex-column">
+                                    <h3 class="m-2">Speed</h3>
+                                    <p class="m-2">
+                                        Install Wordpress on your PC or Mac computer, so you can learn
+                                        without having to pay hosting or domain fees.</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                     <div class="row mt-2">
+                         <div class="col-md-4">
+                             <div class="d-flex flex-row">
+                                 <i class="fas.fa-user-shield fa-3x m-2"></i>
+                                 <div class="d-flex flex-column">
+                                     <h3 class="m-2">Authorized</h3>
+                                     <p class="m-2">
+                                        Install Wordpress on your PC or Mac computer, so you can learn
+                                        without having to pay hosting or domain fees
+                                     </p>
+                                 </div>
+                             </div>
+
+                         </div>
+                         <div class="col-md-4">
+                            <div class="d-flex flex-row">
+                                <i class="fas fa-search fa-3x m-2"></i>
+                                <div class="d-flex flex-column">
+                                    <h3 class="m-2">Search</h3>
+                                    <p class="m-2">
+                                        Install Wordpress on your PC or Mac computer, so you can learn
+                                        without having to pay hosting or domain fees
+                                    </p>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="col-md-4">
+                            <div class="d-flex flex-row">
+                                <i class="fas.fa-sliders-h fa-3x m-2"></i>
+                                <div class="d-flex flex-column">
+                                    <h3 class="m-2">Customize</h3>
+                                    <p class="m-2">
+                                        Install Wordpress on your PC or Mac computer, so you can learn
+                                        without having to pay hosting or domain fees
+                                    </p>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+
+                </div>
+            </div>
+            <div class="section-4 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="hourglass.jpg" alt="Image-7" width="590">
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="text-white">Didn't Know Where to Start form</h1>
+                            <a href="#">Join Us</a>
+                            <p class="para-1">
+                                Install Wordpress on your PC or Mac computer, so you can learn
+                                without having to pay hosting or domain fees
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <footer>
+                <div class="section-5 text-center">
+                    <h4 style="margin-top: 5%;">Get Template Design From Daily Tution</h4>
+                    <h4 class="my-4"> If You need any help</h4>
+
+
+
+                    <div class="form-inline justify-content-center">
+                        <input type="text" name="Email" id="email" placeholder="Email@gmail.com" size="40" class="form-contrl px-4 py-2">
+                        <input type="button" value="Contact Us" class="btn btn-danger px-4 py-2">
+                    </div>
+
+
+                    <div class="social" style="margin: 5%;">
+                        <div class="d-flex flex-row">
+                            <i class="feb fa-facebook-f m-2"></i>
+                            <i class="fab fa-twitter m-2"></i>
+                            <i class="fab fa-instagaram m-2"></i>
+                            <i class="fab fa-twitter m-2"></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 style="color: teal;">Daily Tution &copy;</h5>
+                </div>
+            
+            </footer>
+
+        </main>
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+            <script>
+                window.sr = ScrollReveal({ duration : 2000});
+                sr.reveal('.site-content  .d-flex');
+                sr.reveal('.section-1 .card');
+                sr.reveal('.section-2 .d-flex');
+                sr.reveal('.section-3 .col-md-4');
+                sr.reveal('.section-4 .col-md-7,  .col-md-5');
+
+
+            </script>
+        
+    </body>
+</html>
